@@ -1,0 +1,200 @@
+[
+  {
+    "camera_id": "CAM-01",
+    "name": "Tatibandh Chowk NH-53 Hub",
+    "road_name": "National Highway 53 / Great Eastern Road",
+    "zone": "West",
+    "lat": 21.2027,
+    "lng": 81.6296,
+    "speed_limit": 60,
+    "status": "online",
+    "adjacent_cameras": ["CAM-15", "CAM-16", "CAM-08"]
+  },
+  {
+    "camera_id": "CAM-02",
+    "name": "GE Road (near Telibandha)",
+    "road_name": "Great Eastern Road Commercial Corridor",
+    "zone": "East",
+    "lat": 21.2258,
+    "lng": 81.6721,
+    "speed_limit": 50,
+    "status": "online",
+    "adjacent_cameras": ["CAM-09", "CAM-10", "CAM-04", "CAM-13"]
+  },
+  {
+    "camera_id": "CAM-03",
+    "name": "Fafadih Chowk Junction",
+    "road_name": "Station Road / Bilaspur Highway Link",
+    "zone": "North",
+    "lat": 21.2434,
+    "lng": 81.6238,
+    "speed_limit": 45,
+    "status": "online",
+    "adjacent_cameras": ["CAM-06", "CAM-07", "CAM-14", "CAM-11"]
+  },
+  {
+    "camera_id": "CAM-04",
+    "name": "Pandri Junction Commercial Hub",
+    "road_name": "Pandri Main Cloth Market Boulevard",
+    "zone": "Central",
+    "lat": 21.2380,
+    "lng": 81.6396,
+    "speed_limit": 40,
+    "status": "online",
+    "adjacent_cameras": ["CAM-02", "CAM-05", "CAM-12", "CAM-14"]
+  },
+  {
+    "camera_id": "CAM-05",
+    "name": "VIP Road (near Mowa)",
+    "road_name": "VIP Road / Mowa Ring Road 3",
+    "zone": "North",
+    "lat": 21.2652,
+    "lng": 81.6560,
+    "speed_limit": 60,
+    "status": "online",
+    "adjacent_cameras": ["CAM-04", "CAM-08", "CAM-14"]
+  },
+  {
+    "camera_id": "CAM-06",
+    "name": "Raipur Railway Station Main Gate",
+    "road_name": "Station Approach Road",
+    "zone": "Central",
+    "lat": 21.2333,
+    "lng": 81.6337,
+    "speed_limit": 35,
+    "status": "online",
+    "adjacent_cameras": ["CAM-03", "CAM-11", "CAM-12"]
+  },
+  {
+    "camera_id": "CAM-07",
+    "name": "Shankar Nagar Avenue",
+    "road_name": "Shankar Nagar Main Road",
+    "zone": "North",
+    "lat": 21.2401,
+    "lng": 81.6198,
+    "speed_limit": 45,
+    "status": "online",
+    "adjacent_cameras": ["CAM-03", "CAM-11", "CAM-15"]
+  },
+  {
+    "camera_id": "CAM-08",
+    "name": "Amanaka Chowk University Corridor",
+    "road_name": "GE Road / Pt. Ravishankar Shukla University Link",
+    "zone": "West",
+    "lat": 21.2503,
+    "lng": 81.6455,
+    "speed_limit": 50,
+    "status": "online",
+    "adjacent_cameras": ["CAM-01", "CAM-05", "CAM-14", "CAM-15"]
+  },
+  {
+    "camera_id": "CAM-09",
+    "name": "Telibandha Lake Area (Marine Drive)",
+    "road_name": "Marine Drive Promenade",
+    "zone": "East",
+    "lat": 21.2270,
+    "lng": 81.6689,
+    "speed_limit": 40,
+    "status": "online",
+    "adjacent_cameras": ["CAM-02", "CAM-10", "CAM-13"]
+  },
+  {
+    "camera_id": "CAM-10",
+    "name": "Raipur–Naya Raipur Expressway Link",
+    "road_name": "Atal Nagar Expressway Starting Point",
+    "zone": "East",
+    "lat": 21.2150,
+    "lng": 81.6850,
+    "speed_limit": 80,
+    "status": "online",
+    "adjacent_cameras": ["CAM-02", "CAM-09", "CAM-17", "CAM-18"]
+  },
+  {
+    "camera_id": "CAM-11",
+    "name": "Jaistambh Chowk CBD Gateway",
+    "road_name": "Malviya Road / City Center Ring",
+    "zone": "Central",
+    "lat": 21.2415,
+    "lng": 81.6300,
+    "speed_limit": 35,
+    "status": "online",
+    "adjacent_cameras": ["CAM-03", "CAM-06", "CAM-07", "CAM-12"]
+  },
+  {
+    "camera_id": "CAM-12",
+    "name": "Ghadi Chowk Collectorate",
+    "road_name": "Raj Bhavan Road / MG Road",
+    "zone": "Central",
+    "lat": 21.2440,
+    "lng": 81.6355,
+    "speed_limit": 40,
+    "status": "online",
+    "adjacent_cameras": ["CAM-04", "CAM-06", "CAM-11", "CAM-13"]
+  },
+  {
+    "camera_id": "CAM-13",
+    "name": "Pachpedi Naka Dhamtari Highway",
+    "road_name": "National Highway 30 / Dhamtari Road",
+    "zone": "South",
+    "lat": 21.2135,
+    "lng": 81.6510,
+    "speed_limit": 55,
+    "status": "online",
+    "adjacent_cameras": ["CAM-02", "CAM-09", "CAM-12", "CAM-16"]
+  },
+  {
+    "camera_id": "CAM-14",
+    "name": "Devendra Nagar Sector 1",
+    "road_name": "Devendra Nagar Main Corridor",
+    "zone": "North",
+    "lat": 21.2510,
+    "lng": 81.6340,
+    "speed_limit": 45,
+    "status": "online",
+    "adjacent_cameras": ["CAM-03", "CAM-04", "CAM-05", "CAM-08"]
+  },
+  {
+    "camera_id": "CAM-15",
+    "name": "Sarona Ring Road 1 Bypass",
+    "road_name": "Ring Road No. 1 Outer Bypass",
+    "zone": "West",
+    "lat": 21.2290,
+    "lng": 81.5850,
+    "speed_limit": 65,
+    "status": "online",
+    "adjacent_cameras": ["CAM-01", "CAM-07", "CAM-08", "CAM-16"]
+  },
+  {
+    "camera_id": "CAM-16",
+    "name": "Bhatagaon Inter-State Bus Terminal (ISBT)",
+    "road_name": "ISBT Terminal Approach Arterial",
+    "zone": "South",
+    "lat": 21.2180,
+    "lng": 81.6120,
+    "speed_limit": 45,
+    "status": "online",
+    "adjacent_cameras": ["CAM-01", "CAM-13", "CAM-15"]
+  },
+  {
+    "camera_id": "CAM-17",
+    "name": "Swami Vivekananda Airport Road VIP Link",
+    "road_name": "Mana Airport Road Expressway",
+    "zone": "South",
+    "lat": 21.1850,
+    "lng": 81.7380,
+    "speed_limit": 70,
+    "status": "online",
+    "adjacent_cameras": ["CAM-10", "CAM-18"]
+  },
+  {
+    "camera_id": "CAM-18",
+    "name": "Naya Raipur Sector 24 Smart Gateway",
+    "road_name": "Atal Nagar Smart City Arterial",
+    "zone": "East",
+    "lat": 21.1620,
+    "lng": 81.7820,
+    "speed_limit": 80,
+    "status": "online",
+    "adjacent_cameras": ["CAM-10", "CAM-17"]
+  }
+]

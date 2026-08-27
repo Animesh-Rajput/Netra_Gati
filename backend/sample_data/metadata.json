@@ -1,0 +1,227 @@
+{
+  "image_0001.jpg": {
+    "filename": "image_0001.jpg",
+    "ground_truth_plate": "DL8CAF5030",
+    "vehicle_type": "Sedan",
+    "state_jurisdiction": "Delhi NCR",
+    "condition": "Daylight Road Scene",
+    "relative_path": "sample_data/vehicle_frames/image_0001.jpg",
+    "plate_crop_path": "sample_data/plates/image_0001.jpg"
+  },
+  "image_0002.jpg": {
+    "filename": "image_0002.jpg",
+    "ground_truth_plate": "HR26DK8337",
+    "vehicle_type": "Hatchback",
+    "state_jurisdiction": "Haryana",
+    "condition": "Urban Parking",
+    "relative_path": "sample_data/vehicle_frames/image_0002.jpg",
+    "plate_crop_path": "sample_data/plates/image_0002.jpg"
+  },
+  "image_0003.jpg": {
+    "filename": "image_0003.jpg",
+    "ground_truth_plate": "UP16BV4523",
+    "vehicle_type": "SUV",
+    "state_jurisdiction": "Uttar Pradesh",
+    "condition": "Overcast Traffic",
+    "relative_path": "sample_data/vehicle_frames/image_0003.jpg",
+    "plate_crop_path": "sample_data/plates/image_0003.jpg"
+  },
+  "image_0004.jpg": {
+    "filename": "image_0004.jpg",
+    "ground_truth_plate": "DL10CE3112",
+    "vehicle_type": "Sedan",
+    "state_jurisdiction": "Delhi NCR",
+    "condition": "High-Contrast Daylight",
+    "relative_path": "sample_data/vehicle_frames/image_0004.jpg",
+    "plate_crop_path": "sample_data/plates/image_0004.jpg"
+  },
+  "image_0005.jpg": {
+    "filename": "image_0005.jpg",
+    "ground_truth_plate": "CG04MB1001",
+    "vehicle_type": "SUV",
+    "state_jurisdiction": "Chhattisgarh",
+    "condition": "Raipur Expressway",
+    "relative_path": "sample_data/vehicle_frames/image_0005.jpg",
+    "plate_crop_path": "sample_data/plates/image_0005.jpg"
+  },
+  "image_0006.jpg": {
+    "filename": "image_0006.jpg",
+    "ground_truth_plate": "MH12DE1212",
+    "vehicle_type": "Sedan",
+    "state_jurisdiction": "Maharashtra",
+    "condition": "Highway Sighting",
+    "relative_path": "sample_data/vehicle_frames/image_0006.jpg",
+    "plate_crop_path": "sample_data/plates/image_0006.jpg"
+  },
+  "image_0007.jpg": {
+    "filename": "image_0007.jpg",
+    "ground_truth_plate": "DL01CK8888",
+    "vehicle_type": "Luxury Sedan",
+    "state_jurisdiction": "Delhi NCR",
+    "condition": "Security Watchlist Flag",
+    "relative_path": "sample_data/vehicle_frames/image_0007.jpg",
+    "plate_crop_path": "sample_data/plates/image_0007.jpg"
+  },
+  "image_0008.jpg": {
+    "filename": "image_0008.jpg",
+    "ground_truth_plate": "CG04MA5555",
+    "vehicle_type": "EV Car",
+    "state_jurisdiction": "Chhattisgarh",
+    "condition": "Clean Green EV Plate",
+    "relative_path": "sample_data/vehicle_frames/image_0008.jpg",
+    "plate_crop_path": "sample_data/plates/image_0008.jpg"
+  },
+  "image_0009.jpg": {
+    "filename": "image_0009.jpg",
+    "ground_truth_plate": "KA05MD7788",
+    "vehicle_type": "SUV",
+    "state_jurisdiction": "Karnataka",
+    "condition": "Interstate Corridor",
+    "relative_path": "sample_data/vehicle_frames/image_0009.jpg",
+    "plate_crop_path": "sample_data/plates/image_0009.jpg"
+  },
+  "image_0010.jpg": {
+    "filename": "image_0010.jpg",
+    "ground_truth_plate": "CG07CA4321",
+    "vehicle_type": "Commercial Truck",
+    "state_jurisdiction": "Chhattisgarh",
+    "condition": "Durg-Bhilai Transit",
+    "relative_path": "sample_data/vehicle_frames/image_0010.jpg",
+    "plate_crop_path": "sample_data/plates/image_0010.jpg"
+  },
+  "image_0011.jpg": {
+    "filename": "image_0011.jpg",
+    "ground_truth_plate": "RJ14CA9090",
+    "vehicle_type": "Sedan",
+    "state_jurisdiction": "Rajasthan",
+    "condition": "Highway Toll",
+    "relative_path": "sample_data/vehicle_frames/image_0011.jpg",
+    "plate_crop_path": "sample_data/plates/image_0011.jpg"
+  },
+  "image_0012.jpg": {
+    "filename": "image_0012.jpg",
+    "ground_truth_plate": "MP04CB5678",
+    "vehicle_type": "SUV",
+    "state_jurisdiction": "Madhya Pradesh",
+    "condition": "Night Headlight Glare",
+    "relative_path": "sample_data/vehicle_frames/image_0012.jpg",
+    "plate_crop_path": "sample_data/plates/image_0012.jpg"
+  },
+  "image_0013.jpg": {
+    "filename": "image_0013.jpg",
+    "ground_truth_plate": "CG04KC1357",
+    "vehicle_type": "Motorcycle",
+    "state_jurisdiction": "Chhattisgarh",
+    "condition": "Tatibandh Chowk",
+    "relative_path": "sample_data/vehicle_frames/image_0013.jpg",
+    "plate_crop_path": "sample_data/plates/image_0013.jpg"
+  },
+  "image_0014.jpg": {
+    "filename": "image_0014.jpg",
+    "ground_truth_plate": "CG04GA6060",
+    "vehicle_type": "Govt Vehicle",
+    "state_jurisdiction": "Chhattisgarh",
+    "condition": "Ghadi Chowk Secretariat",
+    "relative_path": "sample_data/vehicle_frames/image_0014.jpg",
+    "plate_crop_path": "sample_data/plates/image_0014.jpg"
+  },
+  "image_0015.jpg": {
+    "filename": "image_0015.jpg",
+    "ground_truth_plate": "UP32BA3333",
+    "vehicle_type": "Commercial Truck",
+    "state_jurisdiction": "Uttar Pradesh",
+    "condition": "Overloaded Transport",
+    "relative_path": "sample_data/vehicle_frames/image_0015.jpg",
+    "plate_crop_path": "sample_data/plates/image_0015.jpg"
+  },
+  "image_0016.jpg": {
+    "filename": "image_0016.jpg",
+    "ground_truth_plate": "CG04TR1010",
+    "vehicle_type": "Emergency Ambulance",
+    "state_jurisdiction": "Chhattisgarh",
+    "condition": "GE Road Emergency Line",
+    "relative_path": "sample_data/vehicle_frames/image_0016.jpg",
+    "plate_crop_path": "sample_data/plates/image_0016.jpg"
+  },
+  "image_0017.jpg": {
+    "filename": "image_0017.jpg",
+    "ground_truth_plate": "MH14EF7878",
+    "vehicle_type": "SUV",
+    "state_jurisdiction": "Maharashtra",
+    "condition": "VIP Road Mowa",
+    "relative_path": "sample_data/vehicle_frames/image_0017.jpg",
+    "plate_crop_path": "sample_data/plates/image_0017.jpg"
+  },
+  "image_0018.jpg": {
+    "filename": "image_0018.jpg",
+    "ground_truth_plate": "CG04CD3456",
+    "vehicle_type": "SUV",
+    "state_jurisdiction": "Chhattisgarh",
+    "condition": "Fafadih Station Approach",
+    "relative_path": "sample_data/vehicle_frames/image_0018.jpg",
+    "plate_crop_path": "sample_data/plates/image_0018.jpg"
+  },
+  "image_0019.jpg": {
+    "filename": "image_0019.jpg",
+    "ground_truth_plate": "DL03CP1111",
+    "vehicle_type": "Sedan",
+    "state_jurisdiction": "Delhi NCR",
+    "condition": "Rainy / Wet Asphalt",
+    "relative_path": "sample_data/vehicle_frames/image_0019.jpg",
+    "plate_crop_path": "sample_data/plates/image_0019.jpg"
+  },
+  "image_0020.jpg": {
+    "filename": "image_0020.jpg",
+    "ground_truth_plate": "CG10AB9999",
+    "vehicle_type": "Hatchback",
+    "state_jurisdiction": "Chhattisgarh",
+    "condition": "Bilaspur Link Road",
+    "relative_path": "sample_data/vehicle_frames/image_0020.jpg",
+    "plate_crop_path": "sample_data/plates/image_0020.jpg"
+  },
+  "image_0021.jpg": {
+    "filename": "image_0021.jpg",
+    "ground_truth_plate": "CG04TA3030",
+    "vehicle_type": "Taxi",
+    "state_jurisdiction": "Chhattisgarh",
+    "condition": "Airport VIP Link",
+    "relative_path": "sample_data/vehicle_frames/image_0021.jpg",
+    "plate_crop_path": "sample_data/plates/image_0021.jpg"
+  },
+  "image_0022.jpg": {
+    "filename": "image_0022.jpg",
+    "ground_truth_plate": "CG04HC8024",
+    "vehicle_type": "Utility Van",
+    "state_jurisdiction": "Chhattisgarh",
+    "condition": "Pandri Market",
+    "relative_path": "sample_data/vehicle_frames/image_0022.jpg",
+    "plate_crop_path": "sample_data/plates/image_0022.jpg"
+  },
+  "image_0023.jpg": {
+    "filename": "image_0023.jpg",
+    "ground_truth_plate": "KA05MC5555",
+    "vehicle_type": "EV Scooter",
+    "state_jurisdiction": "Karnataka",
+    "condition": "Telibandha Marine Drive",
+    "relative_path": "sample_data/vehicle_frames/image_0023.jpg",
+    "plate_crop_path": "sample_data/plates/image_0023.jpg"
+  },
+  "image_0024.jpg": {
+    "filename": "image_0024.jpg",
+    "ground_truth_plate": "CG04KD2468",
+    "vehicle_type": "Scooter",
+    "state_jurisdiction": "Chhattisgarh",
+    "condition": "Shankar Nagar Avenue",
+    "relative_path": "sample_data/vehicle_frames/image_0024.jpg",
+    "plate_crop_path": "sample_data/plates/image_0024.jpg"
+  },
+  "image_0025.jpg": {
+    "filename": "image_0025.jpg",
+    "ground_truth_plate": "MP09AC8765",
+    "vehicle_type": "SUV",
+    "state_jurisdiction": "Madhya Pradesh",
+    "condition": "Sarona Ring Road",
+    "relative_path": "sample_data/vehicle_frames/image_0025.jpg",
+    "plate_crop_path": "sample_data/plates/image_0025.jpg"
+  }
+}
