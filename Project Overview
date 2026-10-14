@@ -1,0 +1,333 @@
+- Project Title: Netra Gati
+- *Team Members: Animesh Singh Rajput-6605608
+                 Shivani Yadav - 6605772
+                 1
+                 2
+                 3
+- *Technology Stack: - **Frontend:** React 18, Vite, Tailwind CSS, Lucide Icons
+                      - **Backend:** Python 3.10+, FastAPI, Uvicorn, Pydantic v2
+                      - **Database:** SQLite (WAL mode)
+                      - **Computer Vision & OCR:** OpenCV, EasyOCR/PaddleOCR, NumPy, PIL, CLAHE
+                      - **Dataset:** Hugging Face – Indian Number Plates Dataset
+                      - **Mapping & GIS:** Leaflet.js, Leaflet.heat, OpenStreetMap
+                      - **Data Visualization:** Recharts
+                      - **Real-Time Communication:** WebSockets
+                      - **Development & Testing:** VS Code, npm, Python automated tests
+- *Project Guide/Mentor: Aarshi Gupta
+- *Project Objective: The objective of NetraGati is to develop an AI-powered Automatic
+Number Plate Recognition (ANPR) and smart-city traffic analytics platform that integrates
+multiple camera sightings to track vehicle movements across different locations. It aims
+to automate number plate recognition, reconstruct vehicle trajectories, analyze traffic patterns,
+identify congestion points, and generate real-time alerts for blacklisted vehicles, supporting efficient
+traffic management and authorized law-enforcement investigations.
+
+2. Problem Statement
+Modern cities use CCTV cameras and Automatic Number Plate Recognition (ANPR) systems for traffic monitoring, law enforcement, and public safety. However, many camera systems operate independently, making it difficult to connect vehicle sightings across different locations.
+This creates several problems:
+- Difficulty tracking blacklisted or high-interest vehicles across different areas.
+- Limited visibility into city-wide traffic movement and congestion.
+- Challenges reconstructing a vehicle's movement history during an investigation.
+- Delays in identifying and responding to relevant vehicle sightings.
+- Fragmented traffic data that limits informed decision-making.
+Proposed solution: NetraGati provides a centralized, AI-powered platform that recognizes vehicle number plates, connects sightings across camera locations, reconstructs observed vehicle trajectories, analyzes traffic patterns, and generates alerts for matching watchlist entries.
+The current prototype demonstrates these capabilities using an Indian number-plate dataset, webcam capture, and simulated camera events anchored to real Raipur GPS coordinates. Integration with live city-camera feeds is part of the future roadmap.
+3. Features
+3.1 Automatic Number Plate Recognition (ANPR)
+- Detects and recognizes vehicle registration plates from uploaded images and webcam captures.
+- Uses OpenCV-based image preprocessing, including grayscale conversion, CLAHE contrast enhancement, and denoising.
+- Displays predicted plate numbers, confidence scores, and annotated images.
+- Compares OCR predictions against ground-truth annotations in the benchmark gallery.
+3.2 Vehicle Trajectory Tracking
+- Searches for a vehicle using its registration number.
+- Reconstructs the chronological history of recorded sightings.
+- Displays timestamps, camera identities, and geographical locations.
+- Supports fuzzy search to handle possible OCR errors.
+- Visualizes the observed route using a GIS map and trajectory polylines.
+3.3 Traffic Analytics Dashboard
+- Displays total sightings, active watchlist alerts, and average city-wide velocity.
+- Shows traffic density by zone and hourly traffic volume.
+- Visualizes Origin-Destination (O-D) movement patterns.
+- Displays traffic heatmaps and potential congestion points.
+- Presents camera-node status and traffic statistics through interactive charts and maps.
+3.4 Blacklist and Real-Time Alert System
+- Allows operators to add or remove flagged vehicle registration numbers.
+- Records the reason for each watchlist entry.
+- Generates alerts when matching simulated or processed detections occur.
+- Pushes notifications through WebSockets.
+- Supports CRITICAL, HIGH, and MEDIUM severity levels.
+- Includes an alert feed, persistent log panel, and alert-resolution functionality.
+3.5 Additional Capabilities
+- Webcam capture through the browser's getUserMedia API.
+- Camera-event simulation using 18 Raipur camera locations.
+- Interactive maps using Leaflet and OpenStreetMap.
+- API documentation through FastAPI's Swagger UI.
+- Backend automated test suite.
+4. Technology Stack
+Component	Technology	Purpose
+Programming language	Python 3.10+	Backend logic, OCR processing and analytics
+Frontend	React 18	Interactive user interface
+Frontend tooling	Vite	Development server and build tooling
+Styling	Tailwind CSS	Responsive UI styling
+Backend framework	FastAPI	REST APIs and WebSocket support
+ASGI server	Uvicorn	Runs the backend application
+Data validation	Pydantic v2	API data validation
+Database	SQLite (WAL mode)	Local storage of sightings and related records
+Computer vision	OpenCV	Image preprocessing and plate recognition pipeline
+Image processing	NumPy, PIL, CLAHE	Image manipulation and contrast enhancement
+OCR engine	EasyOCR/PaddleOCR	Character recognition; confirm the active engine in code
+Dataset	Hugging Face Indian Number Plates Dataset	OCR testing and validation
+GIS mapping	Leaflet.js, OpenStreetMap	Camera locations and trajectory visualization
+Heatmaps	Leaflet.heat	Traffic density visualization
+Charts	Recharts	Traffic analytics and KPI charts
+Real-time communication	WebSockets	Live event streaming and alert notifications
+5. Project Structure
+The following is a representative structure based on the file paths in your PRD. Confirm it against your actual repository before submitting, because the PRD does not list every file.
+NetraGati/
+│
+├── backend/
+│   ├── app/
+│   │   ├── ocr_engine.py
+│   │   ├── database.py
+│   │   ├── simulator.py
+│   │   └── routers/
+│   │       ├── ocr.py
+│   │       ├── trajectory.py
+│   │       ├── analytics.py
+│   │       └── blacklist.py
+│   │
+│   ├── sample_data/
+│   ├── tests/
+│   │   └── run_tests.py
+│   └── run.py
+│
+├── frontend/
+│   └── src/
+│       ├── pages/
+│       │   ├── Dashboard.jsx
+│       │   ├── OcrDemo.jsx
+│       │   ├── TrajectorySearch.jsx
+│       │   ├── Analytics.jsx
+│       │   └── Alerts.jsx
+│       │
+│       ├── components/
+│       │   ├── MapView.jsx
+│       │   └── AlertModal.jsx
+│       │
+│       └── context/
+│           └── WebSocketContext.jsx
+│
+└── README.md
+
+
+Main module responsibilities
+- ocr_engine.py: Image preprocessing and OCR processing.
+- database.py: Database schema and storage utilities.
+- simulator.py: Simulated traffic events and real-time event delivery.
+- routers/ocr.py: OCR API endpoints.
+- routers/trajectory.py: Vehicle trajectory searches.
+- routers/analytics.py: Traffic statistics and analytics APIs.
+- routers/blacklist.py: Watchlist and alert-related APIs.
+- Dashboard.jsx: Central dashboard and KPIs.
+- TrajectorySearch.jsx: Vehicle movement history and map.
+- Analytics.jsx: Charts, O-D analysis and heatmaps.
+- Alerts.jsx: Watchlist management and alert feed.
+- MapView.jsx: Geographical map and trajectory visualization.
+6. Installation and Execution
+Prerequisites
+- Python 3.10 or newer.
+- Node.js 18 or newer.
+- npm.
+- Git, if cloning the repository.
+- Internet access for downloading dependencies and the dataset, where required.
+Step 1: Clone the repository
+Replace the placeholder with your actual GitHub repository URL.
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd NetraGati
+
+
+If you already have the project folder, open it directly in VS Code instead.
+Step 2: Start the backend
+Open a terminal in the project root:
+cd backend
+python -m venv .venv
+
+
+Activate the virtual environment.
+Windows:
+.venv\Scripts\activate
+
+
+Install the backend dependencies using your project's provided dependency file, if available:
+pip install -r requirements.txt
+
+
+Then start the backend:
+python run.py
+
+
+The PRD states that startup initializes the SQLite database, verifies or downloads the dataset, seeds the 18 Raipur camera nodes, and starts the traffic simulator.
+If requirements.txt is not present, use the project's actual dependency instructions rather than assuming that file exists.
+Step 3: Verify the backend
+Open these URLs in your browser:
+- API documentation: http://localhost:8000/docs
+- Health check: http://localhost:8000/api/health
+The backend should be running before you test the frontend features.
+Step 4: Start the frontend
+Open a second terminal:
+cd frontend
+npm install
+npm run dev
+
+
+Open the URL printed by Vite, typically:
+http://localhost:5173
+If that port is occupied, Vite may use another port, such as 5174.
+Step 5: Test the application
+1. Open the dashboard and check its KPIs and map.
+2. Test OCR using an image from the benchmark gallery.
+3. Search for a sample plate in the trajectory page.
+4. Open analytics and inspect the charts and heatmap.
+5. Add a test plate to the watchlist and trigger a matching simulated event.
+6. Verify that the alert appears in the frontend.
+Step 6: Run the backend tests
+From the project root, use the command documented in your PRD:
+python backend/tests/run_tests.py
+
+
+If the test runner requires the backend virtual environment, activate it first.
+7. Screenshots / Output
+Insert actual screenshots from your running project into this section. The PRD identifies the following screens, but screenshots were not included in the supplied document.
+
+
+
+
+
+
+
+
+
+Screenshot 1: Main Dashboard
+Capture the NetraGati dashboard showing KPI cards, camera locations, and traffic activity. Replace this illustrative reference with your actual screenshot.
+
+
+
+
+
+
+
+
+
+
+
+
+Screenshot 2: OCR Recognition
+Show an input plate image, the predicted registration number, confidence score, and annotated bounding box.
+
+
+
+
+
+
+
+
+
+
+
+
+Screenshot 3: Vehicle Trajectory
+Capture the plate search result, chronological sightings, timestamps, and route map.
+
+
+
+
+
+
+
+
+
+
+
+
+Screenshot 4: Traffic Analytics
+Show zone density, traffic volume charts, O-D routes, and the heatmap.
+
+
+
+
+
+
+
+
+
+
+
+
+Screenshot 5: Blacklist Alert
+Capture a test watchlist entry, its alert notification, and the alert log.
+
+
+
+Note: The images above are illustrative references, not verified screenshots of your application. Use real screenshots from your own running NetraGati project in the final submission.
+8. DSA Concepts Used
+This section includes concepts supported by the PRD and distinguishes them from possible implementations that need code verification.
+DSA concept	Application in NetraGati
+Strings	Representing and comparing vehicle registration numbers
+String matching	Searching for a vehicle by its plate number
+Edit distance	Fuzzy matching of OCR-misread characters
+Searching	Retrieving matching vehicle sightings and watchlist entries
+Sorting	Displaying sightings chronologically by timestamp
+Arrays and lists	Processing collections of sightings, camera records and analytics results
+Aggregation	Counting sightings and summarizing traffic by zone or hour
+Important DSA details
+String matching and edit distance: Your PRD explicitly identifies fuzzy/edit-distance search. The standard dynamic-programming edit-distance algorithm has \(O(mn)\) time complexity, where \(m\) and \(n\) are the lengths of the compared strings.
+Sorting: Chronological ordering is part of the trajectory feature. A typical comparison-based sorting algorithm has \(O(n\log n)\) time complexity, although the exact algorithm used by your implementation should be verified.
+Searching and aggregation: The system searches stored sightings and calculates traffic statistics. Actual performance depends on the database queries, indexes, and aggregation implementation.
+Concepts not confirmed by the PRD: Linked lists, stacks, queues, trees, BFS, DFS, Dijkstra's algorithm, and custom hash tables are not explicitly identified as implemented features. Do not list them as DSA concepts actually used unless you confirm them in your source code.
+
+9. Learning Outcomes
+Developing NetraGati provided opportunities to learn and apply the following concepts:
+1. Computer vision and OCR: Understanding image preprocessing, contrast enhancement, plate recognition, and prediction validation.
+2. Backend development: Building API endpoints with FastAPI and validating data using Pydantic.
+3. Database management: Storing and retrieving vehicle sightings and watchlist records using SQLite.
+4. Data Structures and Algorithms: Applying string matching, fuzzy searching, chronological sorting, and data aggregation.
+5. Frontend development: Building interactive dashboards and reusable components using React.
+6. GIS and visualization: Displaying geographical locations, trajectory paths, heatmaps, and traffic charts.
+7. Real-time communication: Understanding WebSockets and server-pushed alert notifications.
+8. System integration: Connecting image processing, APIs, storage, analytics, and frontend components into a single application.
+9. Testing and debugging: Using API documentation, backend tests, and end-to-end feature checks.
+10. Scalability and responsible design: Identifying the additional infrastructure, security, privacy, and validation requirements of a real-world deployment.
+Use the learning outcomes that accurately reflect your own contribution and experience.
+
+10. Future Scope
+The PRD identifies the following production improvements:
+- Live camera integration: Replace simulated camera events with authorized RTSP camera feeds.
+- Scalable database: Migrate from SQLite to PostgreSQL with PostGIS for spatial queries.
+- Distributed event processing: Introduce Kafka or an appropriate message-queue architecture.
+- Advanced OCR: Fine-tune a plate-detection and recognition pipeline, potentially using YOLOv8 and CRNN, with city-specific plate data.
+- Edge and GPU inference: Deploy optimized recognition close to camera sources to improve processing efficiency.
+- Automated watchlist synchronization: Integrate with authorized police or RTO systems.
+- Scalable real-time messaging: Introduce Redis Pub/Sub or a dedicated message broker for multi-client alert delivery.
+Additional improvements that could be considered include:
+- Confidence-based alert filtering and stronger false-positive handling.
+- Role-based access control and comprehensive audit logs.
+- Performance benchmarks for OCR accuracy, latency, and throughput.
+- Configurable data-retention and privacy safeguards.
+- Improved recovery from network interruptions and missed WebSocket events.
+These are proposed improvements, not claims that the current prototype already implements them.
+
+11. References
+The following official documentation and project resources are relevant to the technologies identified in your PRD.
+1. FastAPI documentation: https://fastapi.tiangolo.com/
+2. Python documentation: https://docs.python.org/3/
+3. OpenCV documentation: https://docs.opencv.org/
+4. React documentation: https://react.dev/
+5. Vite documentation: https://vite.dev/guide/
+6. SQLite documentation: https://www.sqlite.org/docs.html
+7. Pydantic documentation: https://docs.pydantic.dev/
+8. Leaflet documentation: https://leafletjs.com/reference.html
+9. OpenStreetMap: https://www.openstreetmap.org/
+10. Recharts documentation: https://recharts.org/en-US/
+11. Hugging Face dataset: Indian Number Plates Dataset
+12. Tailwind CSS documentation: https://tailwindcss.com/docs
+13. WebSocket API: MDN WebSocket documentation
+14. Project-specific documentation: NetraGati Product Requirements Document (PRD), Version 1.0, Smart India Hackathon prototype.
